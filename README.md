@@ -36,3 +36,15 @@ This is an unofficial transformative fan project. The canon compass distinguishe
 This archive is historical design provenance for [Veiled Dominion](https://github.com/Loptr-Lab/veiled-dominion-engine), not current rules authority. See [From Battle the Beast to Veiled Dominion](docs/VEILED_DOMINION_LINEAGE.md) for the design crosswalk, transfer boundaries, and reusable playtest questions.
 
 Machine-readable lineage data is available in `data/veiled-dominion-lineage.json`.
+
+## Research and stewardship
+
+This repository also documents how the archive may be studied without confusing
+historical evidence, current canon, third-party inspiration, and new commercial IP.
+
+- [Authorial intent and IP boundaries](docs/AUTHORIAL_INTENT_AND_IP_BOUNDARIES.md)
+- [Practice-research pathway](docs/PRACTICE_RESEARCH_PATHWAY.md)
+- [Benefits-aware production protocol](docs/BENEFITS_AWARE_PRODUCTION.md)
+
+Personal benefit records, housing records, contracts, unpublished source archives,
+and collaborator correspondence do not belong in this public repository.
