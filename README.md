@@ -37,6 +37,18 @@ This archive is historical design provenance for [Veiled Dominion](https://githu
 
 Machine-readable lineage data is available in `data/veiled-dominion-lineage.json`.
 
+## Place in the wider ecosystem
+
+This project is one documented movement in Dominique Devereaux's wider creative
+development lineage. Read [Role in the Ecosystem](docs/ROLE_IN_ECOSYSTEM.md) for
+its relationship to *The RIM*, Urban Alien Adventures, *Violet's Revenge*, PIXIE,
+and Loptr Lab. The canonical public map is
+[ibloud.github.io/ecosystem](https://ibloud.github.io/ecosystem/).
+
+Want to assist with archive verification, Ink development, accessibility, or
+narrative mapping? See the
+[ecosystem collaboration pathways](https://ibloud.github.io/collaborate/).
+
 ## Research and stewardship
 
 This repository also documents how the archive may be studied without confusing
@@ -45,6 +57,7 @@ historical evidence, current canon, third-party inspiration, and new commercial 
 - [Authorial intent and IP boundaries](docs/AUTHORIAL_INTENT_AND_IP_BOUNDARIES.md)
 - [Practice-research pathway](docs/PRACTICE_RESEARCH_PATHWAY.md)
 - [Benefits-aware production protocol](docs/BENEFITS_AWARE_PRODUCTION.md)
+- [Role in the wider ecosystem](docs/ROLE_IN_ECOSYSTEM.md)
 
 Personal benefit records, housing records, contracts, unpublished source archives,
 and collaborator correspondence do not belong in this public repository.
