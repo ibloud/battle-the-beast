@@ -48,3 +48,12 @@ historical evidence, current canon, third-party inspiration, and new commercial 
 
 Personal benefit records, housing records, contracts, unpublished source archives,
 and collaborator correspondence do not belong in this public repository.
+
+## License and rights
+
+Software code is available under the MIT License. Original narrative,
+worldbuilding, documentation, and research material remain all rights reserved
+unless a file says otherwise. Third-party franchise and media rights remain
+with their respective owners.
+
+See [Licensing and Rights Notice](LICENSE.md) for the complete file-level scope.
