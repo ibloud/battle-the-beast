@@ -30,3 +30,9 @@ This is an unofficial transformative fan project. The canon compass distinguishe
 - `src/data.js` — story map and canon-compass annotations
 - `src/main.js` — site and ink runtime
 - `src/style.css` — visual system
+
+## Relationship to Veiled Dominion
+
+This archive is historical design provenance for [Veiled Dominion](https://github.com/Loptr-Lab/veiled-dominion-engine), not current rules authority. See [From Battle the Beast to Veiled Dominion](docs/VEILED_DOMINION_LINEAGE.md) for the design crosswalk, transfer boundaries, and reusable playtest questions.
+
+Machine-readable lineage data is available in `data/veiled-dominion-lineage.json`.

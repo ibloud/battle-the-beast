@@ -20,3 +20,11 @@ export const references=[
 ['Fogg as guardian','Series-wide','Fogg’s Brakebills authority overlaps canon; raising time-displaced Luna is original.'],
 ['Luna','Original character','Her birth, music, motherhood, and recursive daughter/sister relationship belong to Battle the Beast.']
 ];
+export const lineage=[
+['Dangerous power','Power creates positional responsibility.','Radius of Ruin'],
+['Distributed ensemble','Asymmetry requires interdependence.','Four-player factions'],
+['Grounding relationship','A stabilizer changes how power behaves.','Death’s Sanctuary'],
+['Persistent loss','Removed pieces remain consequential.','Soul Reservoir'],
+['Protective sacrifice','Voluntary loss creates restraint.','Martyr’s Boon'],
+['Repair over reset','Mastery rewards non-destructive choices.','Leadership / Mercy']
+];
