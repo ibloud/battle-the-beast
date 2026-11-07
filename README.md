@@ -42,6 +42,12 @@ This is an unofficial transformative fan project. The canon compass distinguishe
 - `src/main.js` — site and ink runtime
 - `src/style.css` — visual system
 
+## Inspect a branch and propose a change
+
+Start at `threshold` in `story/battle-the-beast.ink`. Choosing “Follow the music.” increments `memory` and diverts to `luna`. `scripts/compile-story.js` compiles that source into `public/story/battle-the-beast.json`; `npm run dev` compiles before starting Vite. In `src/main.js`, `start` fetches the JSON into an Ink `Story`, and `render` creates choice buttons. Clicking one calls `ChooseChoiceIndex` and renders the new passage. Verify the LUNA passage and changed choices, then Restart back to the threshold. `npm run build` also validates six lineage mappings; that build is not a full narrative or accessibility test suite.
+
+For a contribution or question, use [existing GitHub issues](https://github.com/ibloud/battle-the-beast/issues). Identify the branch/function, observed behavior, proposed scope and verification; ask who will review before implementation. Check open PRs to avoid parallel work. A source-reading question is welcome without a patch. Keep changes small, disclose substantial AI assistance factually, and preserve the participation/exit terms above. Canon or rights questions go to the project lead; historical franchise material must not be expanded as a side effect of a code fix. Read the [rights notice](LICENSE.md) and [authorial-intent boundaries](docs/AUTHORIAL_INTENT_AND_IP_BOUNDARIES.md) first.
+
 ## Relationship to Veiled Dominion
 
 This archive is historical design provenance for [Veiled Dominion](https://github.com/Loptr-Lab/veiled-dominion-engine), not current rules authority. See [From Battle the Beast to Veiled Dominion](docs/VEILED_DOMINION_LINEAGE.md) for the design crosswalk, transfer boundaries, and reusable playtest questions.
