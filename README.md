@@ -14,54 +14,54 @@ Loptr Lab’s public mission and participation terms are maintained in one place
 
 Requirements: Node.js 22 and npm.
 
-\`\`\`bash
+```bash
 npm ci
 npm run dev
-\`\`\`
+```
 
 Vite prints a local address. Open it in a browser to use the atlas and interactive story.
 
 ## Build and validation
 
-\`\`\`bash
+```bash
 npm run lineage:validate
 npm run story:compile
 npm run build
-\`\`\`
+```
 
-The build validates the machine-readable lineage mappings, compiles the Ink source to browser JSON, and writes the static site to \`dist/\`. The repository has no dedicated \`npm test\` script; a successful build does not establish full narrative, accessibility, device, or production verification.
+The build validates the machine-readable lineage mappings, compiles the Ink source to browser JSON, and writes the static site to `dist/`. The repository has no dedicated `npm test` script; a successful build does not establish full narrative, accessibility, device, or production verification.
 
-The GitHub Pages workflow builds and deploys from \`main\`. Pull requests receive Vercel previews. A preview or passing check does not mean the production site changed.
+The GitHub Pages workflow builds and deploys from `main`. Pull requests receive Vercel previews. A preview or passing check does not mean the production site changed.
 
 ## Site structure
 
 | Path | Responsibility |
 |---|---|
-| \`index.html\` | Minimal document shell and application mount point |
-| \`src/main.js\` | Renders the site, atlas interactions, and Ink reader |
-| \`src/style.css\` | The single repository-owned stylesheet and visual system |
-| \`src/data.js\` | Story movements, character roles, canon references, and lineage mapping |
-| \`story/battle-the-beast.ink\` | Authoritative playable narrative source |
-| \`scripts/compile-story.js\` | Compiles Ink into \`public/story/battle-the-beast.json\` |
-| \`scripts/validate-lineage.js\` | Checks the machine-readable lineage mapping |
-| \`data/veiled-dominion-lineage.json\` | Machine-readable design lineage |
-| \`docs/\` | Research, rights boundaries, and ecosystem documentation |
+| `index.html` | Minimal document shell and application mount point |
+| `src/main.js` | Renders the site, atlas interactions, and Ink reader |
+| `src/style.css` | The single repository-owned stylesheet and visual system |
+| `src/data.js` | Story movements, character roles, canon references, and lineage mapping |
+| `story/battle-the-beast.ink` | Authoritative playable narrative source |
+| `scripts/compile-story.js` | Compiles Ink into `public/story/battle-the-beast.json` |
+| `scripts/validate-lineage.js` | Checks the machine-readable lineage mapping |
+| `data/veiled-dominion-lineage.json` | Machine-readable design lineage |
+| `docs/` | Research, rights boundaries, and ecosystem documentation |
 
 ### Site layout and stylesheet rule
 
-Keep all site styling in \`src/style.css\`. It is the one source of truth for the repository’s colors, typography, layout, components, and responsive rules. Change the shared stylesheet when the visual system needs to change.
+Keep all site styling in `src/style.css`. It is the one source of truth for the repository’s colors, typography, layout, components, and responsive rules. Change the shared stylesheet when the visual system needs to change.
 
-- Do not add a second site stylesheet, page-specific CSS file, embedded \`<style>\` block, or inline style override.
-- Keep shared color and type choices in the existing \`:root\` custom properties; add reusable component rules to \`src/style.css\`.
-- Build page structure with semantic elements such as \`<header>\`, \`<nav>\`, \`<main>\`, \`<section>\`, \`<article>\`, \`<aside>\`, and \`<footer>\`. Use the element that matches the content’s role and keep heading levels in order.
+- Do not add a second site stylesheet, page-specific CSS file, embedded `<style>` block, or inline style override.
+- Keep shared color and type choices in the existing `:root` custom properties; add reusable component rules to `src/style.css`.
+- Build page structure with semantic elements such as `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, and `<footer>`. Use the element that matches the content’s role and keep heading levels in order.
 - Keep interactive controls as real buttons or links with accessible names. Preserve keyboard operation, visible focus, useful contrast, and responsive reflow.
 - The current site uses one application shell and one stylesheet. Keep future layout changes within that structure unless a separately reviewed architecture change is needed.
 
-The current application template in \`src/main.js\` uses a semantic header and navigation, main content, sections, article cards, an aside, and a footer. \`index.html\` provides the mount point; it does not contain a second page-level style layer.
+The current application template in `src/main.js` uses a semantic header and navigation, main content, sections, article cards, an aside, and a footer. `index.html` provides the mount point; it does not contain a second page-level style layer.
 
 ## Story source and runtime
 
-Start at \`threshold\` in \`story/battle-the-beast.ink\`. Choosing “Follow the music” increments \`memory\` and diverts to \`luna\`. \`npm run story:compile\` writes the browser story JSON. In \`src/main.js\`, \`start\` fetches that JSON into an Ink \`Story\`, and \`render\` creates the choice buttons. Clicking a choice calls \`ChooseChoiceIndex\` and renders the next passage. Restart returns to the threshold.
+Start at `threshold` in `story/battle-the-beast.ink`. Choosing “Follow the music” increments `memory` and diverts to `luna`. `npm run story:compile` writes the browser story JSON. In `src/main.js`, `start` fetches that JSON into an Ink `Story`, and `render` creates the choice buttons. Clicking a choice calls `ChooseChoiceIndex` and renders the next passage. Restart returns to the threshold.
 
 The existing Ink source and branching behavior are the narrative authority. Update generated JSON through the compiler rather than editing its output by hand.
 
