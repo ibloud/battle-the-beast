@@ -6,6 +6,8 @@
 
 This repository preserves a nonlinear story experiment written in conversation with Syfy's *The Magicians*. It is not Veiled Dominion canon, a commercial adaptation license, or proof that later mechanics were already fully designed here.
 
+See [Wattpad Archive Review and Practice Findings](WATTPAD_ARCHIVE_REVIEW.md) for the recovered seven-work chapter map, publication chronology, contest-time television context, creative strengths, development questions, and boundaries on what transfers to original projects.
+
 ## Contribution to the wider practice
 
 The archive provides evidence of sustained work with fragmented identity, consequence across resets, ensemble interdependence, multimodal story navigation, repair instead of erasure, and audiences assembling a system from distributed evidence.
@@ -23,7 +25,7 @@ See [From Battle the Beast to Veiled Dominion](VEILED_DOMINION_LINEAGE.md) for t
 ## Assistance needed
 
 - Verify archive dates and surviving source links.
-- Refine episode-level canon annotations.
+- Refine episode-level canon annotations against authoritative episodes and separately audit the novels.
 - Test the Ink story and keyboard/screen-reader experience.
 - Separate cleared original media from historical third-party references.
 - Test whether fragmented discovery works without prior franchise knowledge.
